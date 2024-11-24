@@ -2,7 +2,8 @@ import openai
 from pubmed_utils import extract_pubmed_query
 
 def language_to_query(question, openai_key, model):
-    openai.api_key = openai_key
+    
+    #openai.api_key = openai_key
     seed = 42
 
     prompt = "Your task is to convert the following sentence into a PubMed query. Your answer should be in the format 'PubMed Query:' followed the converted query. Here is the sentence:"+question

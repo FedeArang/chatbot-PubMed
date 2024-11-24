@@ -10,7 +10,7 @@ st.write("Enter your query in natural language or use the optional fields below 
 
 #openai key and model to use
 
-#openai_key = '' Insert your openai key
+#openai_key = '' #Insert your openai key
 model = "gpt-4o-mini"
 
 

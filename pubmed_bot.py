@@ -9,7 +9,7 @@ st.title("PubMed Chatbot Interface")
 st.write("Enter your query in natural language or use the optional fields below for a detailed search.")
 
 #openai key and model to use
-openai_key = 'sk-BQSzRt_LpeZJv6K4zuir5fMzSJqE_1pSd-156LUk4RT3BlbkFJp1wOm7iarKcjU3pTfcaYGOdYGbF-QzrUfXI4m2R1cA'
+openai_key = ''
 model = "gpt-4o-mini"
 
 

@@ -21,18 +21,34 @@ In the following, we will make a couple of example queries and interactions. Not
 
 # Example 1
 
-Example Chat
-- Natural Language Query:
+Example Chat/Interactions
+- User: Find articles about diabetes
+- AI: Would you like to provide any additional details (Keywords, Authors, Journal, Date Range)?
+- User: Yes
+- User inserts "Keywords: cancer, therapy", "Start Date: 2019", "End Date: 2022" and "Max articles: 7"
+- [Displayed papers: Dural and calvarial metastasis of thyroid follicular carcinoma mimicking Sindou type 6 parafalcine meningioma., Porphyromonas gingivalis, neuroinflammation and Alzheimer's disease., Evidence of a vegan diet for health benefits and risks - an umbrella review of meta-analyses of observational and clinical studies., Selective Venous Sampling Prompting Unilateral Oophorectomy in an Adolescent With PCOS and Markedly Elevated Testosterone., Durvalumab-Associated Hypopituitarism., Insulin Requirements in Untreated Acromegaly: From 200 to 0., Sialic acid: an attractive biomarker with promising biomedical applications.]
+- User presses on "Summarize" for the paper "Dural and calvarial metastasis of thyroid follicular carcinoma mimicking Sindou type 6 parafalcine meningioma."
+- "Summary: A 52-year-old female with type-2 diabetes was admitted with symptoms including headache, dizziness, and numbness. Imaging revealed a large mass in her brain, initially thought to be a meningioma, but histopathology showed it was actually a rare case of papillary thyroid carcinoma that had metastasized to the brain. The patient underwent successful surgery and a total thyroidectomy, and after 5 years, there was no recurrence or new metastasis." is displayed
+- AI: Are you satisfied with the results of the query? Do you want to refine the query?
+- User: Yes! I'm satisfied with the current query! Let's go to the new query!
+- (New page appears)
 
 
 # Example 2
 
-Example Chat
+Example Chat/Interactions
 - User: I would like you to find the papers regarding Active Inference from Karl Friston
 - AI: Would you like to provide any additional details (Keywords, Authors, Journal, Date Range)?
 - User: No
-[Displayed papers: Supervised structure learning, Associative Learning and Active Inference., Homo erectus' slowly broadening Zone of Bounded Surprisals opened the way to technological culture: Reply to comments on "'Snakes and ladders' in palaeoanthropology: From cognitive surprise to skilfulness a million years ago," by., Narrative as active inference: an integrative account of cognitive and social functions in adaptation., Forgetting ourselves in flow: an active inference account of flow states and how we experience ourselves within them.]
-- AI: Are 
+- [Displayed papers: Supervised structure learning, Associative Learning and Active Inference., Homo erectus' slowly broadening Zone of Bounded Surprisals opened the way to technological culture: Reply to comments on "'Snakes and ladders' in palaeoanthropology: From cognitive surprise to skilfulness a million years ago," by., Narrative as active inference: an integrative account of cognitive and social functions in adaptation., Forgetting ourselves in flow: an active inference account of flow states and how we experience ourselves within them.]
+- AI: Are you satisfied with the results of the query? Do you want to refine the query?
+- User: I would like to make some modifications to the query
+- AI: Great, let's modify your query! Would you like to add more details to the previous query or you would like to reformulate the query?
+- I would like to add more details to the previous query
+- Sure! Please add more details in the form below!
+- User enters "Authors: Parr Thomas, Verbelen Tim" and "Journal: Biological psychology" in the form
+- [Displayed papers: Supervised structure learning.]
+
 
 ## Notes on the API
 The original documentation of the PubMed API can be found here: [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/tools/developers/). PubMed Central kindly requests you to:

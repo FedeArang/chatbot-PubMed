@@ -16,14 +16,23 @@ python pubmed_bot.py
 ```
 
 
-## Examples
-For full (working) examples have a look at the `examples/` folder in this repository. In essence you only need to import the `PubMed` class, instantiate it, and use it to query:
+## Example Queries
+In the following, we will make a couple of example queries and interactions. Note that due to the fact that we use LLMs to produce queries, the final results might vary.
 
-```python
-from pymed import PubMed
-pubmed = PubMed(tool="MyTool", email="my@email.address")
-results = pubmed.query("Some query", max_results=500)
-```
+# Example 1
+
+Example Chat
+- Natural Language Query:
+
+
+# Example 2
+
+Example Chat
+- User: I would like you to find the papers regarding Active Inference from Karl Friston
+- AI: Would you like to provide any additional details (Keywords, Authors, Journal, Date Range)?
+- User: No
+[Displayed papers: Supervised structure learning, Associative Learning and Active Inference., Homo erectus' slowly broadening Zone of Bounded Surprisals opened the way to technological culture: Reply to comments on "'Snakes and ladders' in palaeoanthropology: From cognitive surprise to skilfulness a million years ago," by., Narrative as active inference: an integrative account of cognitive and social functions in adaptation., Forgetting ourselves in flow: an active inference account of flow states and how we experience ourselves within them.]
+- AI: Are 
 
 ## Notes on the API
 The original documentation of the PubMed API can be found here: [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/tools/developers/). PubMed Central kindly requests you to:

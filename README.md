@@ -24,7 +24,7 @@ python pubmed_bot.py
 ## Example Queries
 In the following, we will make a couple of example queries and interactions. Note that due to the fact that we use LLMs to produce queries, the final results might vary.
 
-# Example 1
+### Example 1
 
 Example Chat/Interactions
 - **User**: Find articles about diabetes
@@ -39,7 +39,7 @@ Example Chat/Interactions
 - (New page appears)
 
 
-# Example 2
+### Example 2
 
 Example Chat/Interactions
 - **User**: I would like you to find the papers regarding Active Inference from Karl Friston

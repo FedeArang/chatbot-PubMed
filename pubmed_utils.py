@@ -1,4 +1,4 @@
-def extract_pubmed_query(answer):
+def extract_pubmed_query(answer, prefix):
     """
     Extracts the PubMed query from the provided answer.
 
@@ -9,8 +9,12 @@ def extract_pubmed_query(answer):
     Returns:
         str: The extracted query string.
     """
-    prefix = "PubMed Query: "
+
     if prefix in answer:
         return answer.split(prefix, 1)[1].strip()
+    
+    elif answer == "PubMed Query:":
+        return ""
     else:
-        raise ValueError("Invalid format: 'PubMed Query:' prefix not found.")
+        raise ValueError(f"Invalid format: {prefix} prefix not found.")
+    

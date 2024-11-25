@@ -1,4 +1,4 @@
-def generate_pubmed_query(query, manual_keyword, author, start_date, end_date):
+def generate_pubmed_query(query, manual_keyword, author, journal, start_date, end_date):
     """
     Converts user inputs and parsed data into a PubMed search query string.
 
@@ -15,16 +15,27 @@ def generate_pubmed_query(query, manual_keyword, author, start_date, end_date):
     # Use parsed data from natural language query if present, otherwise fall back to manual inputs
 
     if manual_keyword:
-        if len(query)>0:
-            query += f' AND {manual_keyword}'
-        else:
-            query += f'{manual_keyword}'
+        manual_keywords = manual_keyword.split(", ")
+        for keyword in manual_keywords:
+            if len(query)>0:
+                query += f' AND {keyword}'
+            else:
+                query += f'{keyword}'
    
     if author:
+        authors = author.split(", ")
+        for aut in authors:
+            if len(query)>0:
+                query += f' AND {aut}[Author]'
+            else:
+                query += f'{aut}[Author]'
+    
+    if journal:
         if len(query)>0:
-            query += f' AND {author}[Author]'
+            query += f' AND {journal}[Journal]'
         else:
-            query += f'{author}[Author]'
+            query += f'{journal}[Journal]'
+    
     if (start_date or end_date):
         if not start_date:
             start_date = '1800'

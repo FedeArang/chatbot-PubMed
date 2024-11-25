@@ -19,6 +19,7 @@ After that, they need to run:
 ```python
 python pubmed_bot.py
 ```
+After this, the ChatBot Interface should open automatically on their browser. Otherwise, they can copy-paste the link to the webpage of the Interface from the terminal.
 
 
 ## Example Queries

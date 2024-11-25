@@ -14,10 +14,11 @@ def display_message(role, content):
     else:
         st.markdown(f'<div style="text-align: left; margin: 10px; padding: 10px; border-radius: 15px; background-color: #ADD8E6; display: inline-block; float: left; clear: both; max-width: 80%;">{content}</div>', unsafe_allow_html=True)
 
+
 # Set page config to wide mode
 st.set_page_config(layout="wide")
 
-llama_api_key = "" #insert your api key here
+llama_api_key = "LA-a9e8741859694e609b455b3615379d5c3fd2aaef27b14777be96782bbd30e389" #insert your api key here
 model_name = "llama3.1-70b" #name of the model to use for converting the query from natural language and for summarization
 
 # Add custom CSS to reduce padding
@@ -271,7 +272,7 @@ with col2:
 
             # Add a message in the chat after displaying results
             if len(st.session_state.chat_history) == 0 or (st.session_state.chat_history[-1] == "User: No" or st.session_state.chat_history[-1]=="AI: Additional details received. Searching..."):
-                st.session_state.chat_history.append("AI: Are you satisfied with the query? Do you want to modify something?")
+                st.session_state.chat_history.append("AI: Are you satisfied with the results of the query? Do you want to refine the query?")
                 st.rerun()
     
             

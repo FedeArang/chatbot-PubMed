@@ -149,7 +149,7 @@ with col1:
                     st.session_state.clarify_intent = True
                 st.rerun()
 
-    if len(st.session_state.chat_history)>0 and st.session_state.chat_history[-1]=="AI: Are you satisfied with the query? Do you want to modify something?":
+    if len(st.session_state.chat_history)>0 and st.session_state.chat_history[-1]=="AI: Are you satisfied with the results of the query? Do you want to refine the query?":
 
         button_col1, button_col2= st.columns([1, 2])
         with button_col2:

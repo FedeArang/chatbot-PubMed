@@ -17,7 +17,7 @@ def display_message(role, content):
 # Set page config to wide mode
 st.set_page_config(layout="wide")
 
-llama_api_key = "LA-a9e8741859694e609b455b3615379d5c3fd2aaef27b14777be96782bbd30e389"
+llama_api_key = "" #insert your api key here
 model_name = "llama3.1-70b" #name of the model to use for converting the query from natural language and for summarization
 
 # Add custom CSS to reduce padding

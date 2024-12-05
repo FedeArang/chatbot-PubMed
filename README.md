@@ -17,7 +17,7 @@ To run the code, users need to first insert their LlamaAPI key in "pubmed_bot.py
 After that, they need to run:
 
 ```python
-python pubmed_bot.py
+streamlit run pubmed_bot.py
 ```
 After this, the ChatBot Interface should open automatically on their browser. Otherwise, they can copy-paste the link to the webpage of the Interface from the terminal.
 
